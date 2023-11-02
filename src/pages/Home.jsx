@@ -90,7 +90,7 @@ const Home = () => {
     <div>
       <div className="fullscreen-image-container">
         <div className="fullscreen-image">
-          <img src="/src/assets/littlebluepe.jpg" alt="Little Blue Penguin" />
+          <img src="/images/littlebluepe.jpg" alt="Little Blue Penguin" />
         </div>
       </div>
         <div className="home-page">
@@ -109,7 +109,7 @@ const Home = () => {
     </div>
     <div className="fullscreen-image-container">
         <div className="fullscreen-image-west-coast">
-          <img src="/src/assets/WestCoast-db16bb9fdf594fd4871c6344616ed729.jpg" alt="West Coast" />
+          <img src="/images/WestCoast-db16bb9fdf594fd4871c6344616ed729.jpg" alt="West Coast" />
         </div>
       </div>
       <div className='container-two'>
