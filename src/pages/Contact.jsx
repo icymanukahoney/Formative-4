@@ -119,6 +119,18 @@ const ContactForm = () => {
 const Contact = () => {
   return (
     <>
+<Helmet>
+  <title>West Coast Penguin Trust - Contact Form </title>
+  <meta name="description" content="Supporting and conserving penguins and seabirds on the West Coast of New Zealand." />
+  <meta name="keywords" content="contact, message, west-coast-penguin-trust-contact, contact-form, contact-us" />
+  
+  {/* Facebook Open Graph Meta Tags */}
+  <meta property="og:title" content="West Coast Penguin Trust" />
+  <meta property="og:description" content="Supporting and conserving penguins and seabirds on the West Coast of New Zealand." />
+  <meta property="og:image" content="https://formative-4-20sca9osy-icymanukahoney.vercel.app/images/WestCoast-db16bb9fdf594fd4871c6344616ed729.jpg" />
+  <meta property="og:url" content="https://formative-4-20sca9osy-icymanukahoney.vercel.app/#/contact" />
+  <meta property="og:type" content="website" />
+</Helmet>
     <div id='contact-container' className='container'>
         <div>
             <h2>Contact Us</h2>

@@ -81,8 +81,8 @@ const Home = () => {
   {/* Facebook Open Graph Meta Tags */}
   <meta property="og:title" content="West Coast Penguin Trust" />
   <meta property="og:description" content="Supporting and conserving penguins and seabirds on the West Coast of New Zealand." />
-  <meta property="og:image" content="" />
-  <meta property="og:url" content="" />
+  <meta property="og:image" content="https://formative-4-20sca9osy-icymanukahoney.vercel.app/images/littlebluepe.jpg" />
+  <meta property="og:url" content="https://formative-4-20sca9osy-icymanukahoney.vercel.app" />
   <meta property="og:type" content="website" />
 </Helmet>
 

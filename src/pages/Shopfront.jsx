@@ -73,12 +73,28 @@ const Shopfront = () => {
 
  // shopfront return
   return (
+
+    <>
+    <Helmet>
+  <title>West Coast Penguin Trust - Shop page</title>
+  <meta name="description" content="Supporting and conserving penguins and seabirds on the West Coast of New Zealand." />
+  <meta name="keywords" content="west-coast-penguin-trust-shop" />
+
+  {/* Facebook Open Graph Meta Tags */}
+  <meta property="og:title" content="West Coast Penguin Trust" />
+  <meta property="og:description" content="Supporting and conserving penguins and seabirds on the West Coast of New Zealand." />
+  <meta property="og:image" content="https://maria.stromova.yoobeestudent.net/formative2/wp-content/uploads/2023/10/TumbleweedTees-kids-tshirt-gold-little-penguin.jpg" />
+  <meta property="og:url" content="https://formative-4-20sca9osy-icymanukahoney.vercel.app/#/shop" />
+  <meta property="og:type" content="website" />
+</Helmet>
+    
     <div id='shop-page' className='container'>
     <h2>Shop</h2>
     <div id='product-grid' className='grid-container'>
             {loading ? <Loading/> : <Products products={products}/>}
      </div>
 </div>
+</>
   )
 }
 

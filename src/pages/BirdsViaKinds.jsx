@@ -68,6 +68,14 @@ const BirdsViaKinds = () => {
     }, [kindEndpoint])
 
   return (
+    <>
+     <Helmet>
+  <title>West Coast Penguin Trust - Type of the Bird </title>
+  <meta name="description" content="Supporting and conserving penguins and seabirds on the West Coast of New Zealand." />
+  <meta name="keywords" content="west-coast-penguin, west-coast-seabirds, new-zealand-penguin, blue-penguin, little-penguin, fiordland-crested-penguin" />
+  
+</Helmet>
+    
     <div id="birds-via-kind" className='page-container'>
         <button className='goBack-button' onClick={() => navigate(-1)}><ArrowLeft/>Go Back</button>
         <KindName kind={kind}/>
@@ -75,6 +83,7 @@ const BirdsViaKinds = () => {
             <AllBirdsInKind params={params}/>
         </div>
     </div>
+    </>
   )
 }
 

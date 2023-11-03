@@ -71,11 +71,26 @@ const Birds = () => {
 
   return (
 <>
+{/*
     <Helmet>
     <title>{birds[0].title.rendered}</title>
     <meta name='description' content={birds[0].acf.description}/>
     <meta name='keywords' content={`${birds[0].acf.keyword1}, ${birds[0].acf.keyword2}, ${birds[0].acf.keyword3}`}/>
-   </Helmet>
+  </Helmet> 
+  */}
+
+<Helmet>
+  <title>West Coast Penguin Trust - Birds</title>
+  <meta name="description" content="Supporting and conserving penguins and seabirds on the West Coast of New Zealand." />
+  <meta name="keywords" content="west-coast-penguin, west-coast-seabirds, new-zealand-penguin, blue-penguin, little-penguin, fiordland-crested-penguin, sooty-shearwater, spotted-shags, fairy-prion, westland-petrel"/>
+
+  {/* Facebook Open Graph Meta Tags */}
+  <meta property="og:title" content="West Coast Penguin Trust" />
+  <meta property="og:description" content="Supporting and conserving penguins and seabirds on the West Coast of New Zealand." />
+  <meta property="og:image" content="https://maria.stromova.yoobeestudent.net/formative2/wp-content/uploads/2023/10/file.jpg" />
+  <meta property="og:url" content="https://formative-4-20sca9osy-icymanukahoney.vercel.app/#/birds" />
+  <meta property="og:type" content="website" />
+</Helmet>
 
 <div className='container'>
     <h2>Our Birds</h2>

@@ -83,8 +83,22 @@ const Project = () => {
   }
 
   return (
-   
+   <>
+<Helmet>
+  <title>West Coast Penguin Trust - Projects </title>
+  <meta name="description" content="Supporting and conserving penguins and seabirds on the West Coast of New Zealand." />
+  <meta name="keywords" content="projects, seabirds-projects, west-coast-penguin-trust-projects, penguin-projects" />
+  
+  {/* Facebook Open Graph Meta Tags */}
+  <meta property="og:title" content="West Coast Penguin Trust" />
+  <meta property="og:description" content="Supporting and conserving penguins and seabirds on the West Coast of New Zealand." />
+  <meta property="og:image" content="https://maria.stromova.yoobeestudent.net/formative2/wp-content/uploads/2023/10/large.jpeg" />
+  <meta property="og:url" content="https://formative-4-20sca9osy-icymanukahoney.vercel.app/#/projects" />
+  <meta property="og:type" content="website" />
+</Helmet>
+
     <div className='container'>
+      {/*
        {projects && projects.length > 0 && (
         <Helmet>
           <title>{projects[0].title.rendered}</title>
@@ -94,14 +108,14 @@ const Project = () => {
             content={`${projects[0].acf.keyword1}, ${projects[0].acf.keyword2}, ${projects[0].acf.keyword3}`}
           />
         </Helmet>
-      )}
+       )} */}
 
       <h2>Our Projects</h2>
       <div id='projectsCont'>
         {loading ? <p>Loading...</p> : <Projects projects={projects}/>}
       </div>
     </div>
-  
+    </>
   )
 }
 
