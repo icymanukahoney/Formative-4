@@ -2,6 +2,7 @@ import {useEffect, useState} from 'react'
 import {Link, useParams, useNavigate} from 'react-router-dom'
 import {ArrowLeft} from 'react-bootstrap-icons'
 import axios from 'axios'
+import { Helmet } from 'react-helmet'
 
 const baseUrl = import.meta.env.VITE_WP_API_BASEURL
 
